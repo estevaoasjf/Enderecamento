@@ -3,7 +3,7 @@
 
 <head>
 <meta charset="UTF-8">
-<title>Sistema de Consulta TAG</title>
+<title>Sistema de Consulta de Endereços</title>
 
 <link rel="stylesheet" href="style.css">
 
@@ -17,40 +17,22 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
 </head>
 
 <body>
 
 <div class="container">
 
-    <h1>🔎 Sistema de Consulta de TAG</h1>
+    <h1>Consulta de TAG</h1>
 
-    <input 
-        type="text" 
-        id="search" 
-        placeholder="Digite a TAG..." 
-        autofocus>
+    <input id="search" placeholder="Buscar TAG ou descrição" />
 
-    <table>
-        <thead>
-            <tr>
-                <th>TAG</th>
-                <th>DESCRIÇÃO</th>
-                <th>ENDEREÇO</th>
-                <th>PAINEL</th>
-            </tr>
-        </thead>
-        <tbody id="tabela"></tbody>
-    </table>
+    <!-- ✅ RESULTADO EM CARDS -->
+    <div id="resultado"></div>
 
-    <p id="contador"></p>
+    <p id="contador">Digite para pesquisar</p>
 
-</div>
-
-<div class="table-container">
-    <table>
-        ...
-    </table>
 </div>
 
 <script src="script.js"></script>
