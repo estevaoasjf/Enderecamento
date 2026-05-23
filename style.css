@@ -1,14 +1,14 @@
+* {
+    box-sizing: border-box;
+}
+
+
 html, body {
     width: 100%;
     overflow-x: hidden;
     display: flex;
     justify-content: center;
-}
-
-
-body {
-    position: fixed;
-    width: 100%;
+    background-color: #706e6e;
 }
 
 
@@ -17,31 +17,33 @@ body {
     width: 100%;
     max-width: 700px;
     margin: 0 auto;            /* ✅ centraliza */
-    padding: 15px;
-
+    padding: 18px;
     position: relative;
 }
 
 /* título */
 h1 {
     text-align: center;
-    color: #00bfff;
+    color: #070707;
     font-size: 20px;
 }
 
 /* busca */
 input {
     width: 100%;
-    padding: 18px;
-    font-size: 18px;
+    max-width: 100%;     /* ✅ impede ultrapassar */
+    padding: 14px;
+    font-size: 16px;
     border-radius: 10px;
     border: none;
     margin-bottom: 15px;
+
+    box-sizing: border-box;  /* ✅ ESSENCIAL */
 }
 
 /* ✅ CARD (MOBILE REAL) */
 .card {
-    background: #2b2b2b;
+    background: #848383;
     border-radius: 12px;
     padding: 15px;
     margin-bottom: 12px;
@@ -50,9 +52,9 @@ input {
 
 /* TAG */
 .tag {
-    color: #00bfff;
+    color: #050505;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 18px;
     word-break: break-word;
 }
 
@@ -71,7 +73,7 @@ input {
 /* destaque */
 .highlight {
     background: yellow;
-    color: black;
+    color: rgb(7, 7, 7);
 }
 
 /* botão */
