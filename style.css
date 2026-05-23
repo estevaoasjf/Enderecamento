@@ -1,25 +1,15 @@
-/* reset */
-* {
-    box-sizing: border-box;
-}
-
-/* fundo */
 body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #1e1e1e, #2b2b2b);
     margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #1e1e1e;
+    color: white;
 }
 
-/* container central */
+/* container */
 .container {
-    width: 95%;
-    max-width: 1200px;
-    background: #252526;
-    padding: 20px;
-    margin: 20px auto;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    padding: 12px;
+    max-width: 700px;
+    margin: auto;
 }
 
 /* título */
@@ -27,158 +17,68 @@ h1 {
     text-align: center;
     color: #00bfff;
     font-size: 20px;
-    margin-bottom: 15px;
 }
 
-/* campo de busca */
+/* busca */
 input {
     width: 100%;
-    padding: 14px;
-    font-size: 16px;
-    border-radius: 8px;
+    padding: 18px;
+    font-size: 18px;
+    border-radius: 10px;
     border: none;
-    outline: none;
     margin-bottom: 15px;
-    background-color: #1e1e1e;
-    color: white;
 }
 
-/* tabela container (scroll) */
-.table-container {
-    overflow-x: auto;
+/* ✅ CARD (MOBILE REAL) */
+.card {
+    background: #2b2b2b;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 12px;
+    border-left: 5px solid #007acc;
 }
 
-/* tabela */
-table {
-    width: 100%;
-    min-width: 600px; /* evita quebrar no celular */
-    border-collapse: collapse;
-    background-color: #ffffff;
-    border-radius: 8px;
-    overflow: hidden;
+/* TAG */
+.tag {
+    color: #00bfff;
+    font-weight: bold;
+    font-size: 15px;
+    word-break: break-word;
 }
 
-/* cabeçalho */
-th {
-    background: #007acc;
-    color: #fff;
-    padding: 10px;
-    font-size: 13px;
+/* campos */
+.campo {
+    margin-top: 8px;
+    font-size: 14px;
 }
 
-/* células */
-td {
-    padding: 8px;
+/* label */
+.label {
+    color: #888;
     font-size: 12px;
-    border-bottom: 1px solid #ddd;
 }
 
-/* hover */
-tr:hover {
-    background-color: #f1f1f1;
+/* destaque */
+.highlight {
+    background: yellow;
+    color: black;
+}
+
+/* botão */
+.copy-btn {
+    margin-top: 10px;
+    background: #007acc;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    color: white;
+    width: 100%;
+    font-size: 14px;
 }
 
 /* contador */
 #contador {
+    text-align: center;
     margin-top: 10px;
     font-size: 13px;
-    color: #ccc;
-}
-
-/* sugestões */
-#sugestoes {
-    background: white;
-    color: black;
-    position: relative;
-    width: 100%;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    display: none;
-    z-index: 1000;
-    max-height: 200px;
-    overflow-y: auto;
-}
-
-/* sugestão item */
-.itemSugestao {
-    padding: 10px;
-    cursor: pointer;
-    font-size: 13px;
-}
-
-.itemSugestao:hover {
-    background-color: #007acc;
-    color: white;
-}
-
-/* ✅ AJUSTES PARA CELULAR */
-@media (max-width: 600px) {
-
-    h1 {
-        font-size: 18px;
-    }
-
-    input {
-        font-size: 16px;
-        padding: 16px;
-    }
-
-    th, td {
-        font-size: 11px;
-        padding: 6px;
-    }
-
-    /* destaque da busca */
-.highlight {
-    background-color: yellow;
-    color: black;
-    font-weight: bold;
-    padding: 2px 4px;
-    border-radius: 3px;
-}
-
-/* tabela estilo SCADA */
-table {
-    border: 2px solid #007acc;
-}
-
-th {
-    background: linear-gradient(90deg, #007acc, #00bfff);
-}
-
-/* linhas alternadas */
-tr:nth-child(even) {
-    background-color: #f7f7f7;
-}
-
-/* hover mais forte */
-tr:hover {
-    background-color: #cce6ff;
-    transition: 0.2s;
-}
-
-/* campo de busca estilo sistema */
-input {
-    border: 1px solid #007acc;
-}
-
-/* contador mais visível */
-#contador {
-    font-weight: bold;
-    color: #00bfff;
-}
-
-}
-
-body {
-    height: 100vh;
-}
-
-input {
-    font-size: 18px;
-    padding: 16px;
-}
-
-td {
-    padding: 12px;
 }
