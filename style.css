@@ -1,15 +1,25 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #1e1e1e;
-    color: white;
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
 }
+
+
+body {
+    position: fixed;
+    width: 100%;
+}
+
 
 /* container */
 .container {
-    padding: 12px;
+    width: 100%;
     max-width: 700px;
-    margin: auto;
+    margin: 0 auto;            /* ✅ centraliza */
+    padding: 15px;
+
+    position: relative;
 }
 
 /* título */
